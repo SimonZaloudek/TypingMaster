@@ -16,3 +16,5 @@ obj/
 *.exe
 *.pdb
 *.cache/
+*.pubxml
+*.pubxml.user

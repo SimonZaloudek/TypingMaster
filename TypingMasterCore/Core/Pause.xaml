@@ -1,0 +1,48 @@
+﻿<Window x:Class="TypingMasterCore.Core.Pause"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TypingMasterCore.Core"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="Pause" MinHeight="300" Height="300" MinWidth="300" Width="300" Icon="/Assets/typingMasterIcon.png">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                        <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                        <RotateTransform Angle="-70" CenterX="0.5" CenterY="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF1D1D1D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Button Content="BACK TO MENU" FontFamily="Century Gothic" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="200" Click="BackToMenuClick" BorderThickness="1,1,3,3" Margin="0,168,0,0">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF2A2A2A" Offset="0"/>
+                    <GradientStop Color="DimGray" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="RESUME" FontFamily="Century Gothic" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="200" Click="ResumeClick" BorderThickness="1,1,3,3" Margin="0,64,0,0">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF2A2A2A" Offset="0"/>
+                    <GradientStop Color="DimGray" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

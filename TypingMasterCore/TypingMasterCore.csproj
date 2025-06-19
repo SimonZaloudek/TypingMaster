@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\arr.png" />
+    <None Remove="Assets\blockade.png" />
+    <None Remove="Assets\goldenZombie.png" />
+    <None Remove="Assets\gunfire.png" />
+    <None Remove="Assets\heart.png" />
+    <None Remove="Assets\map.png" />
+    <None Remove="Assets\player2.png" />
+    <None Remove="Assets\player3.png" />
+    <None Remove="Assets\typingMasterEditorIcon.png" />
+    <None Remove="Assets\typingMasterIcon.png" />
+    <None Remove="Assets\typingMasterLogo.png" />
+    <None Remove="Assets\Words\easyDiff.txt" />
+    <None Remove="Assets\Words\hardDiff.txt" />
+    <None Remove="Assets\Words\impossDiff.txt" />
+    <None Remove="Assets\Words\mediumDiff.txt" />
+    <None Remove="Assets\zombie1.png" />
+    <None Remove="Assets\zombie2.png" />
+    <None Remove="MainMenuControls\helpPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\arr.png" />
+    <Resource Include="Assets\blockade.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\goldenZombie.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\gunfire.png" />
+    <Resource Include="Assets\heart.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\map.png" />
+    <Resource Include="Assets\player2.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\player3.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\typingMasterEditorIcon.png" />
+    <Resource Include="Assets\typingMasterIcon.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\typingMasterLogo.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Words\easyDiff.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Words\hardDiff.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Words\impossDiff.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Words\mediumDiff.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\zombie1.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\zombie2.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\helpPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TypingMasterEditor\TypingMasterEditor.csproj" />
+  </ItemGroup>
+</Project>
